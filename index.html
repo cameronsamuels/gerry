@@ -1,1 +1,72 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+  <head>
+    <title>Gerry Posts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Create a social media graphic using the Ugly Gerry font made from gerrymandered congressional districts">
+    <link rel="canonical" href="https://cameronsamuels.com/gerry">
+    <link rel="icon" type="image/png" href="https://cameronsamuels.com/gerry/favicon.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Gerry Posts">
+    <meta name="twitter:image" content="https://cameronsamuels.com/gerry/favicon.png">
+    <meta property="og:url" content="https://cameronsamuels.com/gerry">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gerry Posts">
+    <meta property="og:description" content="Create a social media graphic using the Ugly Gerry font made from gerrymandered congressional districts">
+    <meta property="og:image" content="https://cameronsamuels.com/gerry/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+
+    <header>
+      <strong>Register to vote!</strong>
+      Democracy needs you in this election! Visit <a href="https://vote.gov" target="_blank" rel="noopener">vote.gov</a> to register to vote and verify that your registration is effective with your current legal name and residential address.
+    </header>
+      
+    <div>
+      <h1>Gerry Posts</h1>
+      <p>Create a social media graphic using the <a href="https://uglygerry.com" target="_blank" rel="noopener">Ugly Gerry</a> font made from gerrymandered districts</p>
+    </div>
+
+    <noscript>This webpage requires JavaScript. Please enable it or use an updated browser.</noscript>
+    
+    <div>
+      <h2>What is gerrymandering?</h2>
+      <p>Gerrymandering is when politicians choose their voters, not when voters choose their politicians. You can learn more about gerrymandering from <a href="#">link coming soon</a></p>
+      <h2>Create a social media graphic: </h2>
+    </div>
+    
+    <div id="js-box">
+      <div id="js-large" spellcheck="false" contenteditable>Register to Vote</div>
+      <div id="js-small" spellcheck="false" contenteditable>Click here or above to edit text</div>
+    </div>
+    
+    <div id="buttons">
+      <div class="button half" data-jscolor="{value:'rgb(192,160,255)', previewElement:'#js-box', valueElement:'#js-bgcolor'}">Background Color</div>
+      <input type="hidden" id="js-bgcolor">
+      <div class="button half" data-jscolor="{value:'rgb(0,0,0)', previewElement:null, onInput:updateFontColor}">Font Color</div>
+      <br>
+      <div class="button half" id="js-textalign">Text Align</div>
+      <div class="button half" id="js-fontsize-container">
+        Font Size
+        <div><input type="range" min="5" max="25" value="15" id="js-fontsize" class="slider"></div>
+      </div>
+      <div class="button" id="js-download">Generate Graphic</div>
+      <a herf="#" class="button" id="js-downloadlink" download="gerry.png" target="_blank" rel="noopener">Click here to download</a>
+    </div>
+    
+    <div>
+      <h2>About Gerry Posts</h2>
+      <p>Created by Cameron Samuels.<br>Check out the <a href="https://github.com/cameronsamuels/gerry" target="_blank" rel="noopener">source code on Github</a>.</p>
+    </div>
+    
+    <script src="js/html2canvas.js"></script>
+    <script src="js/jscolor.js"></script>
+    <script src="js/script.js"></script>
+    
+  </body>
+  
+</html>
