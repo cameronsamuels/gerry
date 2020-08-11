@@ -70,4 +70,8 @@ document.querySelector("#js-download").addEventListener("click", function() {
       document.querySelector("#js-downloadlink").style.display = "block";
     }
   });
+  ga("send", "event", {
+    "eventCategory": "gerry",
+    "eventAction": "generateGraphic"
+  });
 });
