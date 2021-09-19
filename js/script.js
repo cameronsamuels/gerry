@@ -18,7 +18,7 @@ document.querySelector("#js-large").addEventListener("focusout", function() {
 });
 document.querySelector("#js-small").addEventListener("focusout", function() {
   if (!document.querySelector("#js-small").textContent)
-    document.querySelector("#js-small").innerText = "Click here or above to edit text";
+    document.querySelector("#js-small").innerText = " ";
 });
 
 // Font color
