@@ -59,6 +59,7 @@ body>div:first-of-type p {
   justify-content: center;
   position: relative;
   text-align: center;
+  color: rgb(241, 241, 241);
 }
 
 #js-box div:focus {
@@ -68,9 +69,9 @@ body>div:first-of-type p {
 #js-large {
   display: inline-block;
   max-width: 90%;
-  margin: 0 5%;
+  margin: -25px 5% 0;
   font-family: Gerry;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 #js-large span,
