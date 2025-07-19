@@ -2,12 +2,18 @@
 
 // Resize box
 (function() {
+  var ratio = [1, 5/4, 0.7];
+  var i = 0;
   function updateBox() {
     var box = document.querySelector("#js-box");
     var w = box.offsetWidth;
-    box.style.height = w + "px";
+    box.style.height = (w*ratio[i]) + "px";
   }
   window.addEventListener("resize", updateBox);
+  document.querySelector("#js-ratiosize").addEventListener("click", function() {
+    if (++i == ratio.length) i = 0;
+    updateBox();
+  });
   updateBox();
 })();
 
@@ -26,18 +32,6 @@ function updateFontColor() {
   document.querySelector("#js-large").style.color = this.toRGBAString();
   document.querySelector("#js-small").style.color = this.toRGBAString();
 }
-
-// Text align
-(function() {
-  var flex = ["flex-start", "center", "flex-end"];
-  var text = ["left", "center",  "right"];
-  var align = 0;
-  document.querySelector("#js-textalign").addEventListener("click", function() {
-    if (align == flex.length) align = 0;
-    document.querySelector("#js-box").style.justifyContent = flex[align];
-    document.querySelector("#js-large").style.textAlign = text[align++];
-  });
-})();
 
 // Font size
 (function() {
