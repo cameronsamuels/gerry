@@ -56,7 +56,7 @@ document.querySelector("#js-download").addEventListener("click", function() {
     backgroundColor: document.querySelector("#js-bgcolor").value
   }).then(function(canvas) {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      document.body.innerHTML = "<img width='100%' src='" + canvas.toDataURL() + "'>";
+      document.querySelector("#js-result").innerHTML = "<img width='100%' src='" + canvas.toDataURL() + "'>";
       document.body.appendChild(document.createElement("footer"));
     }
     else {

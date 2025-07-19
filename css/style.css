@@ -72,6 +72,7 @@ body>div:first-of-type p {
   margin: -25px 5% 0;
   font-family: Gerry;
   font-size: 5.8vh;
+  text-align: center;
 }
 
 #js-large span,
@@ -168,20 +169,6 @@ body>div:first-of-type p {
   display: none;
   color: #fff !important;
   text-decoration: none;
-}
-
-footer {
-  position: fixed;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  color: #111;
-  font-size: 1.5em;
-}
-
-footer:before {
-  content: "^ Hold down on image to save ^";
 }
 
 @media print {
