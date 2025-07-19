@@ -62,6 +62,7 @@ document.querySelector("#js-download").addEventListener("click", function() {
     else {
       document.querySelector("#js-downloadlink").href = canvas.toDataURL();
       document.querySelector("#js-downloadlink").style.display = "block";
+      document.querySelector("#js-downloadlink").click();
     }
   });
   ga("send", "event", {
